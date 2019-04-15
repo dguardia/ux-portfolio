@@ -1,1 +1,143 @@
-/* You can add global styles to this file, and also import other style files */
+
+/* Color Theme Swatches in Hex */
+$blue-1: #015BB3;
+$blue-2: #0179BD;
+$blue-3: #0982A6;
+$blue-4: #0997A6;
+$blue-5: #01BDB6;
+
+/* Color Theme Swatches in RGBA */
+$blue-1-rgba: rgba(0,91,179, 1);
+$blue-2-rgba: rgba(1,121,189, 1);
+$blue-3-rgba: rgba(9,130,166, 1);
+$blue-4-rgba: rgba(9,150,166, 1);
+$blue-5-rgba: rgba(1,189,182, 1);
+
+main {
+    margin-top: 62px;
+    .number-borleiplate{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: red;
+        border-radius: 50%;
+        width: 300px;
+        height: 300px;
+        margin: 0 auto;
+        .number-text{
+           font-size: 12rem;
+           font-weight: bolder;
+        }
+    }
+}
+.bg-blue-1{
+    background-color: $blue-1 !important;
+}
+.bg-blue-2{
+    background-color: $blue-2 !important;
+}
+.bg-blue-3{
+    background-color: $blue-3 !important;
+}
+.bg-blue-4{
+    background-color: $blue-4 !important;
+}
+.bg-blue-5{
+    background-color: $blue-5 !important;
+}
+
+.main-color{
+    background-color: $blue-5 !important;
+}
+.container {
+    max-width: 1400px;
+  }
+  
+  /*
+   * Custom translucent site header
+   */
+  
+  .site-header {
+    background-color: rgba(0, 0, 0, .85);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+  }
+  .site-header a {
+    color: #999;
+    transition: ease-in-out color .15s;
+  }
+  .site-header a:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /*
+   * Dummy devices (replace them with your own or something else entirely!)
+   */
+  
+  .product-device {
+    position: absolute;
+    right: 10%;
+    bottom: -30%;
+    width: 300px;
+    height: 540px;
+    background-color: $blue-5;
+    border-radius: 21px;
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+  }
+  
+  .product-device::before {
+    position: absolute;
+    top: 10%;
+    right: 10px;
+    bottom: 10%;
+    left: 10px;
+    content: "";
+    background-color: $blue-4-rgba;
+    border-radius: 5px;
+  }
+  
+  .product-device-2 {
+    top: -25%;
+    right: auto;
+    bottom: 0;
+    left: 5%;
+    background-color: #e5e5e5;
+  }
+  /*
+  * Footer Style
+  */
+  footer{
+      padding: 1.2rem 0;
+      p {
+          color: #FFFFFF;
+      }
+      a{
+          color: #FFFFFF;
+          text-decoration: underline;
+          font-weight: bold;
+          &:hover{
+              color: $blue-2-rgba;
+          }
+
+      }
+  }
+  
+  /*
+   * Extra utilities
+   */
+  
+  .flex-equal > * {
+    -ms-flex: 1;
+    flex: 1;
+  }
+  @media (min-width: 768px) {
+    .flex-md-equal > * {
+      -ms-flex: 1;
+      flex: 1;
+    }
+  }
+  
+  .overflow-hidden { overflow: hidden; }
+
